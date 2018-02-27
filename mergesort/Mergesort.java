@@ -67,8 +67,6 @@ public class Mergesort {
             i++;
             k++;
         }
- 
-        /* Copy remaining elements of R[] if any */
         while (j < rightPart)
         {
             arr[k] = rightArray[j];
@@ -77,9 +75,7 @@ public class Mergesort {
         }
     }
  
-    
-    // Main function that sorts arr[l..r] using
-    // merge()
+   //Function to divide the array
     static void divide(int arr[], int left, int right){
         if (left < right)
         {
